@@ -1,0 +1,779 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #2e2e2e;
+    background: #f5faf6; /* light greenish background */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url('https://images.unsplash.com/photo-1468413253725-0d5181091126?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #f0fff4;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #d8ffd8;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-style: italic;
+    color: #e2ffe2;
+}
+
+/* Navigation */
+nav {
+    background: #2e8b57;  /* main eco green */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #206d42;
+}
+
+/* Cards & Grid Sections */
+.attractions .grid,
+.eco .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    border: 1px solid #cde8d6;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #fff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px;
+    color: #205a38;
+}
+
+.card p {
+    margin: 0 15px 15px;
+    color: #444;
+}
+
+.btn {
+    display: inline-block;
+    background: #2e8b57;
+    color: white;
+    padding: 10px 15px;
+    margin: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #206d42;
+}
+
+/* Culture Section */
+.culture .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.culture-item {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: 20px;
+    background: #ecf9f0;
+    border-radius: 8px;
+    border: 1px solid #cde8d6;
+}
+
+/* --- Culture & Food Polished Style --- */
+.culture .flex {
+  gap: 2rem;
+  justify-content: center;
+}
+
+.culture-item {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #d9ecdf;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 25px 20px;
+  max-width: 340px;
+}
+
+.culture-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+  border-color: #b3e2c1;
+  background: linear-gradient(180deg, #fdfefc 0%, #f2fbf6 100%);
+}
+
+.culture-item img {
+  width: 100%;
+  max-width: 260px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.culture-item:hover img {
+  transform: scale(1.04);
+}
+
+.culture-item h3 {
+  color: #205a38;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #a7e3b4;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.culture-item p {
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+/* Map */
+.map-wrap {
+    background: #f7fcf8;
+    border: 1px solid #cde8d6;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 50, 0, 0.1);
+}
+
+.map-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background: #e8f7ec;
+}
+
+.map-head .open {
+    font-size: .95rem;
+    color: #2e8b57;
+    text-decoration: underline;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 480px;
+    border: 0;
+}
+
+/* Tips */
+.tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tips li {
+    background: #f0fbf3;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 4px solid #2e8b57;
+    color: #205a38;
+}
+
+/* Eco-Tourism Showcase */
+.eco {
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(180deg, #f4fbf7 0%, #eaf7ef 100%);
+}
+
+.eco .card {
+    background: #2f5f44;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+    transition: transform 0.3s;
+    color: #fff;
+}
+
+.eco .card:hover {
+    transform: translateY(-5px);
+}
+
+.eco .media {
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+.eco .pad {
+    padding: 15px;
+}
+
+.eco .tag {
+    display: inline-block;
+    font-size: .75rem;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #a7e3b4;
+    color: #205a38;
+    margin-bottom: 6px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #205a38;
+}
+
+.section-lead {
+    font-size: 1.1rem;
+    color: #316646;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #205a38;
+    color: #d8ffd8;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social a {
+    color: #d8ffd8;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #a7e3b4;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #fafffa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border: 1px solid #cde8d6;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #205a38;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b8dec5;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.form-group textarea {
+    height: 120px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .culture .flex {
+        flex-direction: column;
+    }
+}
+
+/* Language Switcher */
+.language-switcher {
+    text-align: center;
+    padding: 10px 0;
+    background: #e8f7ec;
+}
+
+.language-switcher button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    border: none;
+    background: #2e8b57;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.language-switcher button:hover {
+    background: #206d42;
+}
+/* --- Contrast fixes for Eco cards --- */
+.eco .card {
+  background: #1f4a33;              /* a bit darker for contrast */
+  border: 1px solid #93c9a8;        /* subtle outline for separation */
+}
+
+.eco .card h3 {
+  color: #ffffff;                    /* override global .card h3 */
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+.eco .card p {
+  color: #eaf7ef;                    /* lighter body text */
+  line-height: 1.75;
+}
+
+.eco .tag {
+  background: #d6f5df;               /* lighter chip */
+  color: #0f3f2a;
+}
+
+/* optional: tiny lift on hover without blurring text */
+.eco .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+/* ====== Professional footer (eco theme) ====== */
+.site-footer {
+  --footer-bg: #2e8b57;      /* main green */
+  --footer-bg-2: #25734a;    /* darker band */
+  --footer-txt: #e8ffef;
+  --footer-faint: #c9ecd7;
+  --pill-bg: #e9efe8;        /* CTA right bubble */
+  --accent: #a7e3b4;
+
+  color: var(--footer-txt);
+  background: var(--footer-bg);
+  margin-top: 40px;
+}
+
+/* Top area grid */
+.site-footer .footer-top {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.2fr 1fr; /* brand / links / contact / branches */
+  gap: 2.5rem;
+  padding: 3rem 0 2.5rem;
+}
+
+.site-footer .footer-col h4 {
+  font-size: 1.1rem;
+  margin: 0 0 .9rem;
+  color: #ffffff;
+  letter-spacing: .3px;
+}
+
+/* Brand badge with subtle corner ornaments */
+.site-footer .brand .brand-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: .9rem 1.2rem;
+  border: 1.5px solid rgba(255,255,255,.28);
+  border-radius: 14px;
+  backdrop-filter: blur(2px);
+  isolation: isolate;
+}
+.site-footer .brand .brand-badge span {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: .5px;
+}
+.site-footer .brand .brand-badge i::before,
+.site-footer .brand .brand-badge i::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255,255,255,.28);
+  width: 46px; height: 12px;
+  top: -12px; left: -18px; border-radius: 20px;
+}
+.site-footer .brand .brand-badge i::after {
+  top: auto; bottom: -12px; left: auto; right: -18px;
+}
+
+/* Social icons */
+.site-footer .social {
+  display: flex; gap: .8rem; margin-top: 1.2rem;
+}
+.site-footer .social a {
+  width: 40px; height: 40px; display: inline-grid; place-items: center;
+  background: rgba(0,0,0,.12); color: var(--footer-txt);
+  border-radius: 50%;
+  transition: transform .2s ease, background .2s ease;
+}
+.site-footer .social a:hover {
+  transform: translateY(-3px);
+  background: rgba(0,0,0,.18);
+}
+
+/* Link columns */
+.site-footer .links ul,
+.site-footer .branches ul,
+.site-footer .contact-list {
+  list-style: none; padding: 0; margin: 0;
+}
+.site-footer .links li + li,
+.site-footer .branches li + li,
+.site-footer .contact-list li + li { margin-top: .6rem; }
+
+.site-footer .links a,
+.site-footer .branches li,
+.site-footer .contact-list li {
+  color: var(--footer-faint);
+  text-decoration: none;
+}
+.site-footer .links a:hover { color: #ffffff; text-decoration: underline; }
+
+/* Contact list icons */
+.site-footer .contact-list i {
+  margin-right: .55rem; width: 1.1rem; text-align: center;
+  color: #ffffff;
+}
+
+/* Pill CTA */
+.site-footer .cta {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .9rem;
+  padding: .75rem 1rem .75rem .95rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  color: #fff; text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.18);
+}
+.site-footer .cta span { font-weight: 700; }
+.site-footer .cta i {
+  background: var(--pill-bg); color: #1c3f2b;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: inline-grid; place-items: center;
+}
+.site-footer .cta:hover { transform: translateY(-2px); }
+
+/* Bottom bar */
+.site-footer .footer-bottom {
+  background: var(--footer-bg-2);
+  padding: .9rem 0;
+  border-top: 1px solid rgba(255,255,255,.15);
+}
+.site-footer .footer-bottom .container {
+  display: flex; gap: 1rem; align-items: center; justify-content: space-between;
+}
+.site-footer .footer-bottom .copy { opacity: .9; }
+
+.site-footer .footer-bottom .legal {
+  list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0;
+}
+.site-footer .footer-bottom .legal li { position: relative; }
+.site-footer .footer-bottom .legal li + li::before {
+  content: ""; position: absolute; left: -0.6rem; top: 50%;
+  width: 1px; height: 16px; background: rgba(255,255,255,.35);
+  transform: translateY(-50%);
+}
+.site-footer .footer-bottom .legal a { color: var(--footer-faint); text-decoration: none; }
+.site-footer .footer-bottom .legal a:hover { color: #fff; text-decoration: underline; }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .site-footer .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .site-footer .footer-top {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+  .site-footer .footer-bottom .container {
+    flex-direction: column; gap: .5rem;
+  }
+  .site-footer .brand .brand-badge { width: 100%; justify-content: center; }
+}
+/* Eco-Tourism short explanation section */
+/* Professional Eco-Tourism Intro Section */
+.eco-intro {
+  position: relative;
+  background: linear-gradient(135deg, #e8f7ec 0%, #f9fdfb 100%);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  max-width: 950px;
+  margin: 2.5rem auto 1.5rem;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eco-intro:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.eco-intro::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle at top right, rgba(46,139,87,0.1), transparent 70%);
+  z-index: 0;
+}
+
+.eco-intro h3 {
+  color: #205a38;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.eco-intro h3 i {
+  color: #2e8b57;
+  font-size: 1.3rem;
+}
+
+.eco-intro p {
+  color: #334;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  opacity: 0.95;
+}
+/* Sub-page nav & crumb */
+.sub-nav {
+  background: #2e8b57;
+  color: #e8ffef;
+  padding: .6rem 0;
+  font-size: .95rem;
+}
+.sub-nav .back-home { color: #fff; text-decoration: none; }
+.sub-nav .back-home i { margin-right: .35rem; }
+.sub-nav .crumbs { margin-left: 1rem; opacity: .9; }
+
+/* Sub-page hero using CSS var for image */
+.sub-hero {
+  background:
+    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+    var(--hero) center/cover no-repeat;
+  color: #f2fff6;
+  padding: 4.5rem 0 3.5rem;
+  text-align: center;
+}
+.sub-hero h1 { font-size: 2.2rem; margin: 0 0 .6rem; }
+
+/* Detail sections */
+.detail-lead, .detail-highlights, .detail-map { margin: 2rem 0; }
+.ticks { list-style: none; padding: 0; }
+.ticks li { margin: .5rem 0; padding-left: 1.4rem; position: relative; }
+.ticks li::before {
+  content: "✔"; position: absolute; left: 0; color: #2e8b57; font-weight: 700;
+}
+
+/* Simple gallery */
+.gallery {
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  margin: 1.2rem 0 2rem;
+}
+.gallery img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
+
+/* CTA row */
+.cta-row { display: flex; gap: .8rem; flex-wrap: wrap; margin: 1.5rem 0 2rem; }
+.cta-row .btn { background:#2e8b57; color:#fff; text-decoration:none; padding:.6rem 1rem; border-radius:8px; }
+.cta-row .btn:hover { background:#205a38; }
+/* OLD – remove this if present */
+
+
+/* 2) Make each link behave like a grid cell with a fixed max width */
+#culture .container > .flex > a.culture-link {
+  display: block !important;
+  width: 100% !important;
+  max-width: 360px !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* 3) Ensure the card fills its link, no weird underlines */
+#culture .container > .flex > a.culture-link .culture-item { 
+  height: 100% !important;
+}
+#culture .container > .flex > a.culture-link h3,
+#culture .container > .flex > a.culture-link p,
+#culture
+/* ===== Culture section layout (3→2→1) ===== */
+#culture .culture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+@media (max-width: 1100px) {
+  #culture .culture-grid { grid-template-columns: repeat(2, minmax(260px, 1fr)); }
+}
+@media (max-width: 640px) {
+  #culture .culture-grid { grid-template-columns: 1fr; }
+}
+
+/* Make the card link behave like a card cell */
+#culture .culture-link {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;                /* centers each card nicely */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ensure the card fills its cell */
+#culture .culture-item { height: 100%; }
+
+/* Prevent inherited underlines inside the card */
+#culture .culture-link h3,
+#culture .culture-link p,
+#culture .culture-link img { text-decoration: none; }
+
+/* Optional: tidy hover */
+#culture .culture-link:hover .culture-item {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+/* === FIX: Culture grid layout === */
+#culture .culture-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  justify-items: center;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+#culture .culture-link {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  text-decoration: none;
+  color: inherit;
+}
+
+#culture .culture-link .culture-item {
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  #culture .culture-grid {
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  #culture .culture-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Eco definition card */
+.eco-info { padding: 28px 0; }
+.eco-info-card {
+  background: #eefaf1;               /* light green like your mock */
+  border-radius: 18px;
+  padding: 36px 22px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(0,0,0,.06);
+}
+.eco-info-card h2 { color: #1f6b3a; margin: 0 0 12px; }
+.eco-info-card p  { color: #344054; font-size: 1.05rem; max-width: 920px; margin: 0 auto; }
+

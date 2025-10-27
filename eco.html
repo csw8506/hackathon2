@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eco‑Tourism Setouchi | Explore Sustainably</title>
+  <meta name="description" content="Discover low‑impact travel in Japan’s Setouchi region: culture, maps, tips, eco‑friendly activities, and contact." />
+  <meta name="theme-color" content="#4a6fa5" />
+  <meta property="og:title" content="Eco‑Tourism Setouchi" />
+  <meta property="og:description" content="Sustainable travel ideas across the Seto Inland Sea—culture, maps, and eco experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="pic/hero.jpg" />
+  <meta property="og:locale" content="ja_JP" />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1468413253725-0d5181091126?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+  <link rel="stylesheet" href="eco.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    /* a11y & micro‑polish on top of your eco.css */
+    :focus-visible { outline: 3px solid #2e8b57; outline-offset: 2px; }
+    .skip-link { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+    .skip-link:focus { left: 12px; top: 12px; width:auto; height:auto; padding:8px 12px; background:#fff; border-radius:8px; z-index:9999; }
+    nav button.menu { display:none; }
+    @media (max-width:768px){
+      nav .container { display:flex; align-items:center; justify-content:space-between; }
+      nav button.menu { display:block; background:#3a5a8f; color:#fff; border:0; border-radius:8px; padding:10px 12px; }
+      nav ul { display:none; flex-direction:column; }
+      nav ul.open { display:flex; }
+    }
+    /* card link focus */
+    .card-link:focus-visible .card { box-shadow:0 0 0 3px #2e8b57; transform: translateY(-6px); }
+    /* language bar active state */
+    .language-switcher button[aria-pressed="true"] { filter: brightness(0.9); box-shadow: inset 0 0 0 2px #fff; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Language Switcher (kept simple, improved a11y) -->
+  <div class="language-switcher" role="navigation" aria-label="Language">
+  <button data-lang="en" aria-label="English">
+    <img src="https://flagcdn.com/w20/gb.png" alt="" width="20" height="15"> English
+  </button>
+  <button data-lang="ja" aria-label="Japanese">
+    <img src="https://flagcdn.com/w20/jp.png" alt="" width="20" height="15"> 日本語
+  </button>
+      <button data-lang="ko" aria-label="Korean">
+    <img src="https://flagcdn.com/w20/kr.png" alt="" width="20" height="15"> 한국어
+  </button>
+      <button data-lang="zh-tw" aria-label="Traditional Chinese (Taiwan)">
+    <img src="https://flagcdn.com/w20/tw.png" alt="" width="20" height="15"> 中文(台灣)
+  </button>
+  <button data-lang="bn" aria-label="Bengali">
+    <img src="https://flagcdn.com/w20/bd.png" alt="" width="20" height="15"> বাংলা
+  </button>
+  <button data-lang="si" aria-label="Sinhala">
+    <img src="https://flagcdn.com/w20/lk.png" alt="" width="20" height="15"> සිංහල
+  </button>
+  
+  <button data-lang="ne" aria-label="Nepali">
+    <img src="https://flagcdn.com/w20/np.png" alt="" width="20" height="15"> नेपाली
+  </button>
+</div>
+
+  <!-- Navigation -->
+  <nav aria-label="Primary">
+    <div class="container">
+      <button class="menu" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
+      <ul id="primary-menu">
+        <li><a href="#highlights" data-translate="nav_highlights">Highlights</a></li>
+        <li><a href="#culture" data-translate="nav_culture">Culture</a></li>
+        <li><a href="#map" data-translate="nav_map">Map</a></li>
+        <li><a href="#tips" data-translate="nav_tips">Travel Tips</a></li>
+        <li><a href="#eco" data-translate="nav_eco">Eco-Tourism</a></li>
+        <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header role="banner">
+    <div class="container">
+      <h1 data-translate="header_title">Eco-Tourism Setouchi</h1>
+      <p class="tagline" data-translate="header_tagline">Promote the Eco-Tourism of Seas and Green Forest</p>
+      <h2 data-translate="header_subtitle">Discover Sustainable Travel</h2>
+      <p data-translate="header_text">Find eco-friendly accommodations and experiences that respect nature and local communities.</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Highlights -->
+    <section id="highlights" class="attractions" aria-labelledby="hl-title">
+      <div class="container">
+          <section class="eco-intro" aria-labelledby="ecoIntroTitle">
+  <div class="container">
+    <h3 id="ecoIntroTitle">
+      <i class="fas fa-leaf" aria-hidden="true"></i> What is Eco-Tourism?
+    </h3>
+    <p data-translate="eco_def_text">
+      Eco-Tourism is more than just sightseeing — it’s about traveling responsibly,
+      preserving nature, and connecting with local communities. It promotes
+      sustainability by supporting local economies and protecting the environment
+      for future generations.
+    </p>
+  </div>
+</section>
+
+          <h2 id="hl-title" data-translate="highlights_title">Top Attractions</h2>
+        <div class="grid">
+          <!-- Card 1 -->
+          <a href="https://setouchi-artfest.jp/" target="_blank" rel="noopener" class="card-link">
+            <div class="card">
+              <img loading="lazy" src="pic/8ae337b7-840c-4d4c-a33d-425205a2a8a1.jpg" alt="Scenes from the Setouchi Triennale art festival" />
+              <h3 data-translate="festival_title">Setouchi Festival</h3>
+              <p data-translate="festival_text">The festival of Setouchi is celebrated rarely, and all the people in the community share their thoughts and worship the gods together.</p>
+            </div>
+          </a>
+          <!-- Card 2 -->
+          <a href="https://okayama-castle.jp/home-en/" target="_blank" rel="noopener" class="card-link">
+            <div class="card">
+              <img loading="lazy" src="pic/castel.png" alt="Okayama Castle with riverside view" />
+              <h3 data-translate="castle_title">Okayama Castle</h3>
+              <p data-translate="castle_text">This is one of the best places to visit. The place is very clean and surrounded by the sea and green forest.</p>
+            </div>
+          </a>
+          <!-- Card 3 -->
+          <a href="https://www.okayama-kanko.jp/spot/11137" target="_blank" rel="noopener" class="card-link">
+            <div class="card">
+              <img loading="lazy" src="pic/sea.jpg" alt="Blue waters and boats around Ushimado coast" />
+              <h3 data-translate="ushima_title">Ushimado</h3>
+              <p data-translate="ushima_text">A beautiful sea where you can relax and enjoy the view. Perfect for swimming with family and friends during summer.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Culture -->
+<section id="culture" class="culture" aria-labelledby="culture-title">
+  <div class="container">
+    <h2 id="culture-title" data-translate="culture_title">Culture</h2>
+
+    <div class="culture-grid">
+      <a class="culture-link" href="local-culture.html">
+        <div class="culture-item">
+          <img src="pic/shrine.jpg" alt="Local shrine and red bridge">
+          <h3 data-translate="local_culture_title">地域文化</h3>
+          <p data-translate="local_culture_text">訪問者に最適な歴史的な場所。瀬戸内と岡山の歴史を表現しています。</p>
+        </div>
+      </a>
+
+      <a class="culture-link" href="art-festivals.html">
+        <div class="culture-item">
+          <img src="pic/art.jpg" alt="Local handmade art">
+          <h3 data-translate="art_festivals_title"> アートフェスティバル</h3>
+          <p data-translate="art_festivals_text">地元の人々が作った手作りアート。瀬戸内トリエンナーレで現代アート展を楽しめます。</p>
+        </div>
+      </a>
+
+      <a class="culture-link" href="historic-landmarks.html">
+        <div class="culture-item">
+          <img src="pic/castel.png" alt="Okayama Castle at night">
+          <h3 data-translate="historic_temples_title">歴史的な寺院</h3>
+          <p data-translate="historic_temples_text">非常に有名な岡山城を探索できます。訪問者は城の独特な建築を楽しめます。</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+      
+    <!-- Map -->
+    <section id="map" aria-labelledby="map-title">
+      <div class="container">
+        <h2 class="section-title" id="map-title" data-translate="map_title">Explore Setouchi on the Map</h2>
+        <p class="section-lead" data-translate="map_lead">Centered on the Seto Inland Sea (Setonaikai) between Honshu and Shikoku.</p>
+        <div class="map-wrap">
+          <div class="map-head">
+            <strong>Interactive Map</strong>
+            <a class="open" rel="noopener" target="_blank" href="https://www.google.com/maps/place/Seto+Inland+Sea" data-translate="map_open">Open in Google Maps</a>
+          </div>
+          <iframe class="map-iframe" loading="lazy"
+            src="https://www.google.com/maps?q=Ushimado,+Setouchi,+Okayama,+Japan&hl=en&z=13&output=embed"
+            title="Seto Inland Sea on Google Maps"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips -->
+    <section id="tips" class="tips" aria-labelledby="tips-title">
+      <div class="container">
+        <h2 id="tips-title" data-translate="tips_title">Travel Tips</h2>
+        <ul>
+          <li data-translate="tips_1">🚆 Transport: Use the JR Pass for trains between islands.</li>
+          <li data-translate="tips_2">🌸 Best Time: Spring (cherry blossoms) or Autumn (mild weather).</li>
+          <li data-translate="tips_3">🚴 Activity: Cycle the Shimanami Kaido route.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Eco‑Tourism Ideas -->
+    <section id="eco" class="eco" aria-labelledby="eco-title">
+      <div class="container">
+        <h2 class="section-title" id="eco-title" data-translate="eco_title">Eco-Tourism Ideas</h2>
+        <p class="section-lead" data-translate="eco_lead">Low-impact adventures that support conservation and communities.</p>
+        <div class="grid">
+          <article class="card">
+            <img class="media" loading="lazy" src="olive-oil.jpg" alt="Olive trees on a sunny hillside" />
+            <div class="pad">
+              <span class="tag" data-translate="eco1_tag">Shōdoshima</span>
+              <h3 data-translate="eco1_title">Olive & Citrus Farm Stays</h3>
+              <p data-translate="eco1_text">Harvest with locals and learn water-wise farming on the ‘island of olives’.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="media" loading="lazy" src="solar-boat.jpg" alt="Solar‑assisted sightseeing boat between islands" />
+            <div class="pad">
+              <span class="tag" data-translate="eco2_tag">Island Hopping</span>
+              <h3 data-translate="eco2_title">Low-Emission Boat Tours</h3>
+              <p data-translate="eco2_text">Choose electric or solar boats between art islands and fishing towns.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="media" loading="lazy" src="cycling.jpg" alt="Cyclist riding along Shimanami Kaido with friends" />
+            <div class="pad">
+              <span class="tag" data-translate="eco3_tag">Shimanami Kaido</span>
+              <h3 data-translate="eco3_title">Guided Cycling</h3>
+              <p data-translate="eco3_text">Car-free routes, local guides, and plastic-free picnics with island produce.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="media" loading="lazy" src="planting.jpg" alt="Volunteers planting along a shoreline" />
+            <div class="pad">
+              <span class="tag" data-translate="eco4_tag">Conservation</span>
+              <h3 data-translate="eco4_title">Reef & Shoreline Care</h3>
+              <p data-translate="eco4_text">Join volunteer days restoring habitats and cleaning remote beaches.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="contact-form">
+      <h2 class="section-title" id="contact-title" data-translate="contact_title">Contact Us</h2>
+      <form id="contactForm" action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="name" data-translate="name_label">Name</label>
+          <input type="text" id="name" name="name" required aria-required="true" />
+        </div>
+        <div class="form-group">
+          <label for="email" data-translate="email_label">Email</label>
+          <input type="email" id="email" name="email" required aria-required="true" inputmode="email" />
+        </div>
+        <div class="form-group">
+          <label for="subject" data-translate="subject_label">Subject</label>
+          <input type="text" id="subject" name="subject" required aria-required="true" />
+        </div>
+        <div class="form-group">
+          <label for="message" data-translate="message_label">Message</label>
+          <textarea id="message" name="message" required aria-required="true"></textarea>
+        </div>
+        <button type="submit" class="btn" data-translate="send_button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+  <div class="footer-top container">
+    <div class="footer-col brand">
+      <div class="brand-badge">
+        <span>Eco Tours</span>
+        <i aria-hidden="true"></i>
+      </div>
+
+      <div class="social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <nav class="footer-col links" aria-label="Quick links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#culture">Culture & Food</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#eco">Eco-Tourism</a></li>
+        <li><a href="#tips">Travel Tips</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-col contact">
+      <h4>Contact Us</h4>
+      <ul class="contact-list">
+        <li><i class="far fa-map"></i> Setouchi, Japan</li>
+        <li><i class="far fa-envelope"></i> info@ecotours.example</li>
+        <li><i class="fas fa-phone"></i> +81-00-0000-0000</li>
+      </ul>
+      <a class="cta" href="#contact">
+        <span>View more</span>
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <div class="footer-col branches">
+      <h4>Areas</h4>
+      <ul>
+        <li>Ushimado – Okayama</li>
+        <li>Shōdoshima – Kagawa</li>
+        <li>Naoshima – Kagawa</li>
+        <li>Kurashiki – Okayama</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="copy">© 2025 Eco Tours. All rights reserved</div>
+      <ul class="legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts: existing translation map, then small enhancements -->
+  <script src="translate.js" defer></script>
+  <script>
+    // Enhance language switching: persist choice, set <html lang>, toggle button states
+    function applyLang(lang){
+      document.documentElement.lang = lang;
+      // Toggle pressed state
+      document.querySelectorAll('.language-switcher [data-lang]').forEach(btn=>{
+        btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lang')===lang));
+      });
+      // Use your existing translations object (defined in translate.js)
+      if (typeof translations !== 'undefined') {
+        document.querySelectorAll('[data-translate]').forEach(el=>{
+          const key = el.getAttribute('data-translate');
+          if (translations[lang] && translations[lang][key]) el.innerText = translations[lang][key];
+        });
+      }
+      localStorage.setItem('eco_lang', lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile menu toggle
+      const menuBtn = document.querySelector('nav button.menu');
+      const list = document.getElementById('primary-menu');
+      menuBtn?.addEventListener('click', ()=>{
+        const open = list.classList.toggle('open');
+        menuBtn.setAttribute('aria-expanded', String(open));
+      });
+
+      // Language initialization & click handlers
+      const saved = localStorage.getItem('eco_lang') || 'ja';
+      applyLang(saved);
+      document.querySelectorAll('.language-switcher [data-lang]').forEach(btn=>{
+        btn.addEventListener('click', ()=> applyLang(btn.getAttribute('data-lang')));
+      });
+
+      // Simple client‑side form validation UX
+      const form = document.getElementById('contactForm');
+      form.addEventListener('submit', (e)=>{
+        if (!form.checkValidity()) {
+          e.preventDefault();
+          [...form.elements].forEach(el=> el.reportValidity && el.reportValidity());
+        }
+      });
+    });
+  </script>
+</body>
+</html>
