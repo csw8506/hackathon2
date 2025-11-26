@@ -12,8 +12,9 @@
   <meta property="og:image" content="pic/hero.jpg" />
   <meta property="og:locale" content="ja_JP" />
   <link rel="preload" as="image" href="https://images.unsplash.com/photo-1468413253725-0d5181091126?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
-  <link rel="stylesheet" href="eco.css" />
+  <link rel="stylesheet" href="css/eco.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<<<<<<< HEAD
   <style>
     /* a11y & micro‑polish on top of your eco.css  */
     :focus-visible { outline: 3px solid #2e8b57; outline-offset: 2px; }
@@ -31,6 +32,9 @@
     /* language bar active state */
     .language-switcher button[aria-pressed="true"] { filter: brightness(0.9); box-shadow: inset 0 0 0 2px #fff; }
   </style>
+=======
+  
+>>>>>>> 7634ffac051c3c62647c6297631ac318afdba042
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -140,7 +144,7 @@
     <h2 id="culture-title" data-translate="culture_title">Culture</h2>
 
     <div class="culture-grid">
-      <a class="culture-link" href="local-culture.html">
+      <a class="culture-link" href="web/local-culture.html">
         <div class="culture-item">
           <img src="pic/shrine.jpg" alt="Local shrine and red bridge">
           <h3 data-translate="local_culture_title">地域文化</h3>
@@ -148,7 +152,7 @@
         </div>
       </a>
 
-      <a class="culture-link" href="art-festivals.html">
+      <a class="culture-link" href="web/art-festivals.html">
         <div class="culture-item">
           <img src="pic/art.jpg" alt="Local handmade art">
           <h3 data-translate="art_festivals_title"> アートフェスティバル</h3>
@@ -156,7 +160,7 @@
         </div>
       </a>
 
-      <a class="culture-link" href="historic-landmarks.html">
+      <a class="culture-link" href="web/historic-landmarks.html">
         <div class="culture-item">
           <img src="pic/castel.png" alt="Okayama Castle at night">
           <h3 data-translate="historic_temples_title">歴史的な寺院</h3>
@@ -207,7 +211,7 @@
         <p class="section-lead" data-translate="eco_lead">Low-impact adventures that support conservation and communities.</p>
         <div class="grid">
           <article class="card">
-            <img class="media" loading="lazy" src="olive-oil.jpg" alt="Olive trees on a sunny hillside" />
+            <img class="media" loading="lazy" src="pic/olive-oil.jpg" alt="Olive trees on a sunny hillside" />
             <div class="pad">
               <span class="tag" data-translate="eco1_tag">Shōdoshima</span>
               <h3 data-translate="eco1_title">Olive & Citrus Farm Stays</h3>
@@ -215,7 +219,7 @@
             </div>
           </article>
           <article class="card">
-            <img class="media" loading="lazy" src="solar-boat.jpg" alt="Solar‑assisted sightseeing boat between islands" />
+            <img class="media" loading="lazy" src="pic/solar-boat.jpg" alt="Solar‑assisted sightseeing boat between islands" />
             <div class="pad">
               <span class="tag" data-translate="eco2_tag">Island Hopping</span>
               <h3 data-translate="eco2_title">Low-Emission Boat Tours</h3>
@@ -223,7 +227,7 @@
             </div>
           </article>
           <article class="card">
-            <img class="media" loading="lazy" src="cycling.jpg" alt="Cyclist riding along Shimanami Kaido with friends" />
+            <img class="media" loading="lazy" src="pic/cycling.jpg" alt="Cyclist riding along Shimanami Kaido with friends" />
             <div class="pad">
               <span class="tag" data-translate="eco3_tag">Shimanami Kaido</span>
               <h3 data-translate="eco3_title">Guided Cycling</h3>
@@ -231,7 +235,7 @@
             </div>
           </article>
           <article class="card">
-            <img class="media" loading="lazy" src="planting.jpg" alt="Volunteers planting along a shoreline" />
+            <img class="media" loading="lazy" src="pic/planting.jpg" alt="Volunteers planting along a shoreline" />
             <div class="pad">
               <span class="tag" data-translate="eco4_tag">Conservation</span>
               <h3 data-translate="eco4_title">Reef & Shoreline Care</h3>
@@ -334,7 +338,7 @@
 
 
   <!-- Scripts: existing translation map, then small enhancements -->
-  <script src="translate.js" defer></script>
+  <script src="./js/translate.js" defer></script>
   <script>
     // Enhance language switching: persist choice, set <html lang>, toggle button states
     function applyLang(lang){
