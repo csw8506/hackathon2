@@ -793,22 +793,3 @@ footer {
 .eco-info-card h2 { color: #1f6b3a; margin: 0 0 12px; }
 .eco-info-card p  { color: #344054; font-size: 1.05rem; max-width: 920px; margin: 0 auto; }
 
-#reservation {
-  padding: 60px 20px;
-  background: #f5f9fc;
-}
-
-#calendar {
-  max-width: 900px;
-  margin: 30px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.reserve-message {
-  text-align: center;
-  font-size: 18px;
-  margin-top: 15px;
-}
