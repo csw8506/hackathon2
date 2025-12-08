@@ -40,10 +40,19 @@ document.addEventListener('DOMContentLoaded', () => {
       selectable: true,
       locale: saved,  // ← 5言語自動対応
 
-      dateClick: function(info) {
-        msg.textContent = `選択した日付: ${info.dateStr}（予約可能）`;
-        msg.style.color = "#2a7a2a";
-      },
+     dateClick: function(info) {
+     msg.textContent = `選択した日付: ${info.dateStr}（予約可能）`;
+     msg.style.color = "#2a7a2a";
+
+    const reserveBtn = document.getElementById("reserveButton");
+  
+    // 選択した日付を予約画面へ渡す
+    const urlDate = encodeURIComponent(info.dateStr);
+    reserveBtn.href = `/reserve_form.html?date=${urlDate}`;
+
+    reserveBtn.style.display = "inline-block";
+  },
+
 
       validRange: {
         start: new Date().toISOString().split("T")[0]
@@ -78,3 +87,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const calendarEl = document.getElementById("calendar");
+  const selectMsg = document.getElementById("selectDateMessage");
+  const reserveBtn = document.getElementById("reserveButton");
+
+  const calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: "dayGridMonth",
+    selectable: true,
+
+    dateClick: function (info) {
+      const selectedDate = info.dateStr;
+
+      // 選択した日を表示
+      selectMsg.textContent = `選択した日: ${selectedDate}`;
+      selectMsg.style.display = "block";
+
+      // 予約ボタンを表示して、リンクをセット
+      reserveBtn.style.display = "inline-block";
+
+      // 予約フォームへ日付を送る
+      reserveBtn.href = `./reservation-entry.html?date=${selectedDate}`;
+    }
+  });
+
+  calendar.render();
+});
+
