@@ -793,3 +793,8 @@ footer {
 .eco-info-card h2 { color: #1f6b3a; margin: 0 0 12px; }
 .eco-info-card p  { color: #344054; font-size: 1.05rem; max-width: 920px; margin: 0 auto; }
 
+#reservation-title {
+  text-align: center;
+  margin: 20px 0;
+}
+

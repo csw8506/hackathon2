@@ -44,7 +44,9 @@
 <!-- Full Calendar Reservation -->
 <section id="reservation" class="section" aria-labelledby="reservation-title">
   <div class="reservation-box">
-    <h2 class="section-title" id="reservation-title">Reservation Calendar</h2>
+    <h2 class="section-title" id="reservation-title" data-translate="reservation_title">
+  Reservation Calendar
+</h2>
     <div id="calendar"></div>
     <p id="selectDateMessage" class="reserve-message"></p>
   </div>
@@ -143,82 +145,9 @@
 
 
   <!-- Scripts: existing translation map, then small enhancements -->
-  <script src="./js/translate.js" defer></script>
+  <script src="../js/translate.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
-  <script>
-    // Enhance language switching: persist choice, set <html lang>, toggle button states
-    function applyLang(lang){
-      document.documentElement.lang = lang;
-      // Toggle pressed state
-      document.querySelectorAll('.language-switcher [data-lang]').forEach(btn=>{
-        btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lang')===lang));
-      });
-      // Use your existing translations object (defined in translate.js)
-      if (typeof translations !== 'undefined') {
-        document.querySelectorAll('[data-translate]').forEach(el=>{
-          const key = el.getAttribute('data-translate');
-          if (translations[lang] && translations[lang][key]) el.innerText = translations[lang][key];
-        });
-      }
-      localStorage.setItem('eco_lang', lang);
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      // ======================
-// FullCalendar 예약 달력
-// ======================
-const calendarEl = document.getElementById('calendar');
-const msg = document.getElementById('selectDateMessage');
-
-if (calendarEl) {
-  const calendar = new FullCalendar.Calendar(calendarEl, {
-    initialView: 'dayGridMonth',
-    selectable: true,
-    locale: 'ja',  // 달력 표시 언어 (한국어는 'ko', 영어는 'en')
-
-    // 날짜 클릭 이벤트
-    dateClick: function(info) {
-      msg.textContent = `選択した日付: ${info.dateStr}（予約可能）`;
-      msg.style.color = "#2a7a2a";
-
-      // 나중에 예약 페이지로 이동시키고 싶으면 이 사용:
-      // window.location.href = `/reserve?date=${info.dateStr}`;
-    },
-
-    // 선택 불가 날짜도 만들 수 있음
-    validRange: {
-      start: new Date().toISOString().split("T")[0]  // 오늘 이전은 선택 불가
-    }
-  });
-
-  calendar.render();
-}
-
-      // Mobile menu toggle
-      const menuBtn = document.querySelector('nav button.menu');
-      const list = document.getElementById('primary-menu');
-      menuBtn?.addEventListener('click', ()=>{
-        const open = list.classList.toggle('open');
-        menuBtn.setAttribute('aria-expanded', String(open));
-      });
-
-      // Language initialization & click handlers
-      const saved = localStorage.getItem('eco_lang') || 'ja';
-      applyLang(saved);
-      document.querySelectorAll('.language-switcher [data-lang]').forEach(btn=>{
-        btn.addEventListener('click', ()=> applyLang(btn.getAttribute('data-lang')));
-      });
-
-      // Simple client‑side form validation UX
-      const form = document.getElementById('contactForm');
-      form.addEventListener('submit', (e)=>{
-        if (!form.checkValidity()) {
-          e.preventDefault();
-          [...form.elements].forEach(el=> el.reportValidity && el.reportValidity());
-        }
-      });
-    });
-  </script>
+  <script src="../js/reserve.js" defer></script>
 </body>
 </html>
 
