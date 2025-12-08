@@ -32,3 +32,15 @@
 .reservation-box {
   text-align: center;   /* ← これでボタンが中央になる */
 }
+.selected-date-box {
+  margin-top: 25px;
+  padding: 18px;
+  background: #fff9d6;        /* 薄い黄色 */
+  border-left: 6px solid #ffb300;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}

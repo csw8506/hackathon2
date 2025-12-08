@@ -114,3 +114,12 @@ document.addEventListener("DOMContentLoaded", function () {
   calendar.render();
 });
 
+  // URLから ?date=YYYY-MM-DD を取得
+  const params = new URLSearchParams(window.location.search);
+  const date = params.get("date");
+
+  document.getElementById("selectedDate").textContent =
+    "選択した日付: " + date;
+
+  document.getElementById("dateInput").value = date;
+
