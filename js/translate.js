@@ -101,8 +101,8 @@ const translations = {
         eco3_tag: "山里散策",
         eco3_title: "ガイド付き町歩き",
         eco3_text: "地元ガイドが、町並みの歴史・建物の背景・ベンガラ文化を丁寧に紹介します。",
-        eco4_tag: "バス巡り策",
-        eco4_title: "吹屋まち巡りバス",        
+        eco4_tag: "バス",
+        eco4_title: "バス巡り",        
         eco4_text: "シャトルバスで吹屋の町を巡り、歴史ある景観を気軽に楽しめます。",
 
         
