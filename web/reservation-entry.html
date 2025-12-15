@@ -41,38 +41,47 @@
     <!-- ★ Python へデータ送信するフォーム（action 部分を変更） -->
     <form action="http://localhost:5000/reserve" method="POST" class="reserve-form">
 
-      <!-- カレンダーで選択した日付 -->
-      <input type="hidden" name="date" id="dateInput">
+  <input type="hidden" name="date" id="dateInput">
 
-      <label>代表者</label>
-      <input type="text" name="name" required>
+  <div class="form-row">
+    <label>代表者</label>
+    <input type="text" name="name" required>
+  </div>
 
-      <label>年齢</label>
-      <input type="number" name="age" required>
+  <div class="form-row">
+    <label>年齢</label>
+    <input type="number" name="age" required>
+  </div>
 
-      <label>国籍</label>
-      <input type="text" name="country" required>
+  <div class="form-row">
+    <label>国籍</label>
+    <input type="text" name="country" required>
+  </div>
 
-      <label>メール</label>
-      <input type="email" name="email" required>
+  <div class="form-row">
+    <label>メール</label>
+    <input type="email" name="email" required>
+  </div>
 
-      <label>電話番号</label>
-      <input type="tel" name="phone">
+  <div class="form-row">
+    <label>電話番号</label>
+    <input type="tel" name="phone">
+  </div>
+
+  <div class="form-row">
+    <label>人数 <span class="required">※</span></label>
+    <input type="number" name="people" min="1" max="10" required>
+    <span class="limit-note">（最大10名）</span>
+  </div>
 
 
-      <!-- ▶ 同意チェックはフォーム内に入れる！ -->
-      <label style="margin-top:25px;">
-        <br><input type="checkbox" id="privacyCheck" name="privacy" required>
-        個人情報の取扱いに同意します（※必須）
-      </label>
+  <label class="privacy-row">
+    <input type="checkbox" id="privacyCheck" name="privacy" required>
+    個人情報の取扱いに同意します（※必須）
+  </label>
 
-      <p class="privacy-note">
-        ご提供いただいた個人情報は予約確認以外に利用しません。（縦に変えて文字大きく、団体の場合何人の予約か制限など）
-        <a href="#" target="_blank">プライバシーポリシー</a>
-      </p>
-
-      <button type="submit" class="reserve-btn">予約を送信</button>
-    </form>
+  <button type="submit" class="reserve-btn">予約を送信</button>
+</form>
 
   </div>
 </section>
