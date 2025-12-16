@@ -44,3 +44,74 @@
   text-align: center;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
+/* 폼 전체 */
+.reserve-form {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* 한 줄 구조 */
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+/* 왼쪽 라벨 */
+.form-row label {
+  width: 90px;          /* ← 여기서 정렬 통제 */
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* 오른쪽 입력칸 */
+.form-row input {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* 개인정보 동의는 예외 */
+.privacy-row {
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+/* 버튼 */
+.reserve-btn {
+  margin-top: 20px;
+  width: 100%;
+}
+/* 入力欄の横幅を統一 */
+.form-row input,
+.form-row select {
+  width: 100%;
+  max-width: 260px;   /* ← これが幅統一の決め手 */
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* form-row 自体の構造 */
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ラベル幅は固定 */
+.form-row label {
+  width: 120px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* 注記は固定幅にしない */
+.limit-note {
+  white-space: nowrap;
+  font-size: 12px;
+  color: #666;
+}
