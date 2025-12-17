@@ -84,7 +84,7 @@
           <h2 id="hl-title" data-translate="highlights_title">Top Attractions</h2>
         <div class="grid">
           <!-- Card 1 -->
-          <a href="https://takahasikanko.or.jp/modules/spot/index.php?content_id=25" target="_blank" rel="noopener" class="card-link">
+          <a href="https://www.okayama-kanko.jp/spot/detail_10850.html" target="_blank" rel="noopener" class="card-link">
             <div class="card">
               <img loading="lazy" src="pic/hukiya (210).jpg" alt="Scenes from the Setouchi Triennale art festival" />
               <h3 data-translate="festival_title">Setouchi Festival</h3>
@@ -318,6 +318,14 @@
       menuBtn?.addEventListener('click', ()=>{
         const open = list.classList.toggle('open');
         menuBtn.setAttribute('aria-expanded', String(open));
+      });
+
+      // メニュー内リンクを押したら自動で閉じる
+      document.querySelectorAll('#primary-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          list.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        });
       });
 
       // Language initialization & click handlers
