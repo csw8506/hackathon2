@@ -320,6 +320,14 @@
         menuBtn.setAttribute('aria-expanded', String(open));
       });
 
+      // メニュー内リンクを押したら自動で閉じる
+      document.querySelectorAll('#primary-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          list.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+
       // Language initialization & click handlers
       const saved = localStorage.getItem('eco_lang') || 'ja';
       applyLang(saved);

@@ -804,3 +804,25 @@ footer {
 .card {
   height: 550px; /* 好きな高さに調整 */
 }
+/* ===== Mobile Navigation ===== */
+@media (max-width: 768px) {
+
+  #primary-menu {
+    display: none;
+    flex-direction: column;
+    background: #2e8b57;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  #primary-menu.open {
+    display: flex;
+  }
+
+  nav button.menu {
+    display: block;
+  }
+}
