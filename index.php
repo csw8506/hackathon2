@@ -49,7 +49,6 @@
         <li><a href="#map" data-translate="nav_map">Map</a></li>
         <li><a href="#tips" data-translate="nav_tips">Travel Tips</a></li>
         <li><a href="#eco" data-translate="nav_eco">Eco-Tourism</a></li>
-        <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -71,7 +70,7 @@
           <section class="eco-intro" aria-labelledby="ecoIntroTitle">
   <div class="container">
     <h3 id="ecoIntroTitle">
-      <i class="fas fa-leaf" aria-hidden="true"></i> What is Eco-Tourism?
+      <i class="fas fa-leaf" aria-hidden="true"></i>  エコツーリズムって何?🌿
     </h3>
     <p data-translate="eco_def_text">
       Eco-Tourism is more than just sightseeing — it’s about traveling responsibly,
@@ -82,28 +81,28 @@
   </div>
 </section>
 
-          <h2 id="hl-title" data-translate="highlights_title">Top Attractions</h2>
+        <h2 id="hl-title" data-translate="highlights_title">Top Attractions</h2>
         <div class="grid">
           <!-- Card 1 -->
-          <a href="https://setouchi-artfest.jp/" target="_blank" rel="noopener" class="card-link">
+          <a href="https://www.okayama-kanko.jp/spot/detail_10850.html" target="_blank" rel="noopener" class="card-link">
             <div class="card">
-              <img loading="lazy" src="pic/8ae337b7-840c-4d4c-a33d-425205a2a8a1.jpg" alt="Scenes from the Setouchi Triennale art festival" />
+              <img loading="lazy" src="pic/hukiya (210).jpg" alt="Scenes from the Setouchi Triennale art festival" />
               <h3 data-translate="festival_title">Setouchi Festival</h3>
               <p data-translate="festival_text">The festival of Setouchi is celebrated rarely, and all the people in the community share their thoughts and worship the gods together.</p>
             </div>
           </a>
           <!-- Card 2 -->
-          <a href="https://okayama-castle.jp/home-en/" target="_blank" rel="noopener" class="card-link">
+          <a href="https://www.okayama-kanko.jp/spot/detail_10833.html" target="_blank" rel="noopener" class="card-link">
             <div class="card">
-              <img loading="lazy" src="pic/castel.png" alt="Okayama Castle with riverside view" />
+              <img loading="lazy" src="pic/hukiya (152).jpg" alt="Okayama Castle with riverside view" />
               <h3 data-translate="castle_title">Okayama Castle</h3>
               <p data-translate="castle_text">This is one of the best places to visit. The place is very clean and surrounded by the sea and green forest.</p>
             </div>
           </a>
           <!-- Card 3 -->
-          <a href="https://www.okayama-kanko.jp/spot/11137" target="_blank" rel="noopener" class="card-link">
+          <a href="https://www.okayama-kanko.jp/spot/detail_10876.html" target="_blank" rel="noopener" class="card-link">
             <div class="card">
-              <img loading="lazy" src="pic/sea.jpg" alt="Blue waters and boats around Ushimado coast" />
+              <img loading="lazy" src="pic/hukiya (271).jpg" alt="Blue waters and boats around Ushimado coast" />
               <h3 data-translate="ushima_title">Ushimado</h3>
               <p data-translate="ushima_text">A beautiful sea where you can relax and enjoy the view. Perfect for swimming with family and friends during summer.</p>
             </div>
@@ -113,37 +112,37 @@
     </section>
 
     <!-- Culture -->
-<section id="culture" class="culture" aria-labelledby="culture-title">
-  <div class="container">
-    <h2 id="culture-title" data-translate="culture_title">Culture</h2>
+  <section id="culture" class="culture" aria-labelledby="culture-title">
+    <div class="container">
+      <h2 id="culture-title" data-translate="culture_title">Culture</h2>
 
-    <div class="culture-grid">
-      <a class="culture-link" href="web/local-culture.html">
-        <div class="culture-item">
-          <img src="pic/shrine.jpg" alt="Local shrine and red bridge">
-          <h3 data-translate="local_culture_title">地域文化</h3>
-          <p data-translate="local_culture_text">訪問者に最適な歴史的な場所。瀬戸内と岡山の歴史を表現しています。</p>
-        </div>
-      </a>
+      <div class="culture-grid">
+        <a class="culture-link" href="web/local-culture.html">
+          <div class="culture-item">
+            <img src="pic/hukiya (261).jpg" alt="Local shrine and red bridge">
+            <h3 data-translate="local_culture_title">ベンガラ</h3>
+            <p data-translate="local_culture_text">ベンガラ（弁柄、紅殻）は、酸化第二鉄（Fe₂O₃）を主成分とする赤色の無機顔料です。世界最古の顔料の一つであり、日本では古くから陶器、漆器、建築物の塗装などに幅広く利用されてきました。</p>
+          </div>
+        </a>
 
-      <a class="culture-link" href="web/art-festivals.html">
-        <div class="culture-item">
-          <img src="pic/art.jpg" alt="Local handmade art">
-          <h3 data-translate="art_festivals_title"> アートフェスティバル</h3>
-          <p data-translate="art_festivals_text">地元の人々が作った手作りアート。瀬戸内トリエンナーレで現代アート展を楽しめます。</p>
-        </div>
-      </a>
+        <a class="culture-link" href="web/art-festivals.html">
+          <div class="culture-item">
+            <img src="pic/hukiya (263).jpg" alt="Local handmade art">
+            <h3 data-translate="art_festivals_title">  吹屋ふるさと村</h3>
+            <p data-translate="art_festivals_text">吹屋ふるさと村は、岡山県高梁市成羽町にある「ジャパンレッド（ベンガラ）」発祥の地で、赤銅色の瓦とベンガラ色の町並みが美しい歴史的観光スポットです。江戸時代から銅山とベンガラで栄え、現在は重要伝統的建造物群保存地区に指定されています。</p>
+          </div>
+        </a>
 
-      <a class="culture-link" href="web/historic-landmarks.html">
-        <div class="culture-item">
-          <img src="pic/castel.png" alt="Okayama Castle at night">
-          <h3 data-translate="historic_temples_title">歴史的な寺院</h3>
-          <p data-translate="historic_temples_text">非常に有名な岡山城を探索できます。訪問者は城の独特な建築を楽しめます。</p>
-        </div>
-      </a>
+        <a class="culture-link" href="web/historic-landmarks.html">
+          <div class="culture-item">
+            <img src="pic/hukiya (1).jpg" alt="Okayama Castle at night">
+            <h3 data-translate="historic_temples_title">吹屋のスープカレー定食</h3>
+            <p data-translate="historic_temples_text">旬の野菜がごろごろ入ったスープカレーは、軽やかなスパイスと野菜の甘みが溶け合うやさしい味。さらりと食べやすく、心も体もじんわり温めてくれる定食です。</p>
+          </div>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
       
     <!-- Map -->
@@ -185,37 +184,43 @@
         <p class="section-lead" data-translate="eco_lead">Low-impact adventures that support conservation and communities.</p>
         <div class="grid">
           <article class="card">
-            <img class="media" loading="lazy" src="pic/olive-oil.jpg" alt="Olive trees on a sunny hillside" />
+            <img class="media" loading="lazy" src="pic/hukiya.png" alt="Olive trees on a sunny hillside" />
             <div class="pad">
               <span class="tag" data-translate="eco1_tag">Shōdoshima</span>
               <h3 data-translate="eco1_title">Olive & Citrus Farm Stays</h3>
               <p data-translate="eco1_text">Harvest with locals and learn water-wise farming on the ‘island of olives’.</p>
             </div>
           </article>
+          <a href="#" class="card-link">
           <article class="card">
-            <img class="media" loading="lazy" src="pic/solar-boat.jpg" alt="Solar‑assisted sightseeing boat between islands" />
+            <img class="media" loading="lazy" src="pic/hukiya (269).jpg" alt="Solar‑assisted sightseeing boat between islands" />
             <div class="pad">
               <span class="tag" data-translate="eco2_tag">Island Hopping</span>
               <h3 data-translate="eco2_title">Low-Emission Boat Tours</h3>
               <p data-translate="eco2_text">Choose electric or solar boats between art islands and fishing towns.</p>
             </div>
           </article>
+          </a>
+          <a href="web/reserve.php" class="card-link">
           <article class="card">
-            <img class="media" loading="lazy" src="pic/cycling.jpg" alt="Cyclist riding along Shimanami Kaido with friends" />
+            <img class="media" loading="lazy" src="pic/エコツーリズム２.png" alt="Cyclist riding along Shimanami Kaido with friends" />
             <div class="pad">
               <span class="tag" data-translate="eco3_tag">Shimanami Kaido</span>
               <h3 data-translate="eco3_title">Guided Cycling</h3>
               <p data-translate="eco3_text">Car-free routes, local guides, and plastic-free picnics with island produce.</p>
             </div>
           </article>
-          <article class="card">
-            <img class="media" loading="lazy" src="pic/planting.jpg" alt="Volunteers planting along a shoreline" />
+          </a>
+          <a href="#" class="card-link">
+          <article class="card"> 
+            <img class="media" loading="lazy" src="pic/hukiya (17).jpg" alt="Volunteers planting along a shoreline" />
             <div class="pad">
               <span class="tag" data-translate="eco4_tag">Conservation</span>
               <h3 data-translate="eco4_title">Reef & Shoreline Care</h3>
               <p data-translate="eco4_text">Join volunteer days restoring habitats and cleaning remote beaches.</p>
             </div>
           </article>
+          </a>
         </div>
       </div>
     </section>
@@ -250,7 +255,7 @@
       </ul>
     </nav>
 
-    <div class="footer-col contact">
+  
       <h4>Contact Us</h4>
       <ul class="contact-list">
         <li><i class="far fa-map"></i> Setouchi, Japan</li>
@@ -315,6 +320,14 @@
         menuBtn.setAttribute('aria-expanded', String(open));
       });
 
+    // メニュー内リンクを押したら自動で閉じる
+    document.querySelectorAll('#primary-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        list.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
       // Language initialization & click handlers
       const saved = localStorage.getItem('eco_lang') || 'ja';
       applyLang(saved);
@@ -323,13 +336,13 @@
       });
 
       // Simple client‑side form validation UX
-      const form = document.getElementById('contactForm');
-      form.addEventListener('submit', (e)=>{
-        if (!form.checkValidity()) {
-          e.preventDefault();
-          [...form.elements].forEach(el=> el.reportValidity && el.reportValidity());
-        }
-      });
+      // const form = document.getElementById('contactForm');
+      // form.addEventListener('submit', (e)=>{
+      //   if (!form.checkValidity()) {
+      //     e.preventDefault();
+      //     [...form.elements].forEach(el=> el.reportValidity && el.reportValidity());
+      //   }
+      // });
     });
   </script>
 </body>
