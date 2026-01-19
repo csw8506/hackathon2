@@ -1,0 +1,105 @@
+#reservation {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+#calendar {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.reservation-box {
+  text-align: center;
+}
+
+.reserve-message {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* ===== ボタン（最終形） ===== */
+.reserve-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  margin-top: 20px;
+  background: #0077cc;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* フォーム内ボタン：全幅 */
+.reserve-form .reserve-btn {
+  width: 100%;
+}
+
+/* カレンダー下の予約ボタン */
+#reserveButton {
+  width: auto;
+  min-width: 160px;
+}
+
+/* ===== フォーム ===== */
+.reserve-form {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.form-row label {
+  width: 120px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  max-width: 260px;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.privacy-row {
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+.limit-note {
+  white-space: nowrap;
+  font-size: 12px;
+  color: #666;
+}
+
+/* 選択日表示 */
+.selected-date-box {
+  margin-top: 25px;
+  padding: 18px;
+  background: #fff9d6;
+  border-left: 6px solid #ffb300;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 8px;
+}
