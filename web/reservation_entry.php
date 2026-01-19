@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eco-Tourism Setouchi | Explore Sustainably</title>
+  <meta name="description" content="Discover low-impact travel in Japan’s Setouchi region: culture, maps, tips, eco-friendly activities, and contact." />
+  <meta name="theme-color" content="#4a6fa5" />
+  <meta property="og:title" content="Eco-Tourism Setouchi" />
+  <meta property="og:description" content="Sustainable travel ideas across the Seto Inland Sea—culture, maps, and eco experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../pic/hero.jpg" />
+  <meta property="og:locale" content="ja_JP" />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1468413253725-0d5181091126?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+  <link rel="stylesheet" href="../css/eco.css" />
+  <link rel="stylesheet" href="../css/reserve.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Language Switcher -->
+<div class="language-switcher" role="navigation" aria-label="Language">
+  <button data-lang="en"><img src="https://flagcdn.com/w20/gb.png"> English</button>
+  <button data-lang="ja"><img src="https://flagcdn.com/w20/jp.png"> 日本語</button>
+  <button data-lang="ko"><img src="https://flagcdn.com/w20/kr.png"> 한국어</button>
+  <button data-lang="bn"><img src="https://flagcdn.com/w20/bd.png"> বাংলা</button>
+  <button data-lang="my"><img src="https://flagcdn.com/w20/mm.png"> မြန်မာ</button>
+</div>
+
+<section class="section">
+  <div class="reservation-box">
+
+    <h2 class="section-title">予約フォーム</h2>
+
+    <!-- 選択した日付 -->
+    <p id="selectedDate" class="selected-date-box"></p>
+
+    <!-- ★ Python へデータ送信するフォーム（action 部分を変更） -->
+    <form action="http://localhost:5000/reserve" method="POST" class="reserve-form">
+
+  <input type="hidden" name="date" id="dateInput">
+
+  <div class="form-row">
+    <label>代表者</label>
+    <input type="text" name="name" required>
+  </div>
+
+  <div class="form-row">
+    <label>年齢</label>
+    <input type="number" name="age" required>
+  </div>
+
+  <div class="form-row">
+    <label>国籍</label>
+    <input type="text" name="country" required>
+  </div>
+
+  <div class="form-row">
+    <label>メール</label>
+    <input type="email" name="email" required>
+  </div>
+
+  <div class="form-row">
+    <label>電話番号</label>
+    <input type="tel" name="phone">
+  </div>
+
+  <div class="form-row">
+    <label>人数 <span class="required">※</span></label>
+    <input type="number" name="people" min="1" max="10" required>
+    <span class="limit-note">（最大10名）</span>
+  </div>
+
+
+  <label class="privacy-row">
+    <input type="checkbox" id="privacyCheck" name="privacy" required>
+    個人情報の取扱いに同意します（※必須）
+  </label>
+
+  <button type="submit" class="reserve-btn">予約を送信</button>
+</form>
+
+  </div>
+</section>
+
+<!-- Scripts -->
+<script src="../js/translate.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+<script src="../js/reserve.js" defer></script>
+</body>
+</html>

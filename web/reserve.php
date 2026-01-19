@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eco‑Tourism Setouchi | Explore Sustainably</title>
+  <meta name="description" content="Discover low‑impact travel in Japan’s Setouchi region: culture, maps, tips, eco‑friendly activities, and contact." />
+  <meta name="theme-color" content="#4a6fa5" />
+  <meta property="og:title" content="Eco‑Tourism Setouchi" />
+  <meta property="og:description" content="Sustainable travel ideas across the Seto Inland Sea—culture, maps, and eco experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../pic/hero.jpg" />
+  <meta property="og:locale" content="ja_JP" />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1468413253725-0d5181091126?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+  <link rel="stylesheet" href="../css/eco.css" />
+  <link rel="stylesheet" href="../css/reserve.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Language Switcher (kept simple, improved a11y) -->
+  <div class="language-switcher" role="navigation" aria-label="Language">
+  <button data-lang="en" aria-label="English">
+    <img src="https://flagcdn.com/w20/gb.png" alt="" width="20" height="15"> English
+  </button>
+  <button data-lang="ja" aria-label="Japanese">
+    <img src="https://flagcdn.com/w20/jp.png" alt="" width="20" height="15"> 日本語
+  </button>
+      <button data-lang="ko" aria-label="Korean">
+    <img src="https://flagcdn.com/w20/kr.png" alt="" width="20" height="15"> 한국어
+  </button>
+  <button data-lang="bn" aria-label="Bengali">
+    <img src="https://flagcdn.com/w20/bd.png" alt="" width="20" height="15"> বাংলা
+  </button>
+ <button data-lang="my" aria-label="Burmese">
+  <img src="https://flagcdn.com/w20/mm.png" alt="" width="20" height="15"> မြန်မာ
+</button>
+</div>
+
+<!-- Full Calendar Reservation -->
+<section id="reservation" class="section" aria-labelledby="reservation-title">
+  <div class="reservation-box">
+    <h2 class="section-title" id="reservation-title" data-translate="reservation_title">
+  Reservation Calendar
+</h2>
+    <div id="calendar"></div>
+    <p id="selectDateMessage" class="reserve-message"></p>
+    <a data-translate="reservation_btn" id="reserveButton" href="#" class="reserve-btn" style="display:none;">
+  予約する
+</a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+  <div class="footer-top container">
+    <div class="footer-col brand">
+      <div class="brand-badge">
+        <span>Eco Tours</span>
+        <i aria-hidden="true"></i>
+      </div>
+
+      <div class="social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <nav class="footer-col links" aria-label="Quick links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#culture">Culture & Food</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#eco">Eco-Tourism</a></li>
+        <li><a href="#tips">Travel Tips</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-col contact">
+      <h4>Contact Us</h4>
+      <ul class="contact-list">
+        <li><i class="far fa-map"></i> Setouchi, Japan</li>
+        <li><i class="far fa-envelope"></i> info@ecotours.example</li>
+        <li><i class="fas fa-phone"></i> +81-00-0000-0000</li>
+      </ul>
+      <a class="cta" href="#contact">
+        <span>View more</span>
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <div class="footer-col branches">
+      <h4>Areas</h4>
+      <ul>
+        <li>Ushimado – Okayama</li>
+        <li>Shōdoshima – Kagawa</li>
+        <li>Naoshima – Kagawa</li>
+        <li>Kurashiki – Okayama</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="copy">© 2025 Eco Tours. All rights reserved</div>
+      <ul class="legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts: existing translation map, then small enhancements -->
+  <script src="../js/translate.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script src="../js/reserve.js" defer></script>
+</body>
+</html>
+
+
