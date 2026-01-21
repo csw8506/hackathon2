@@ -1,0 +1,75 @@
+[33m89a500e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge chan2 into main
+[33mf152b1d[m test
+[33m80dea41[m Merge pull request #8 from csw8506/siwon
+[33ma770c58[m[33m ([m[1;31morigin/siwon[m[33m, [m[1;32msiwon[m[33m)[m test1
+[33m56724ff[m code fix
+[33md92e938[m 韓国語対応とエコツーリズムとは？の修正
+[33mff0e813[m Merge branch 'main' of https://github.com/csw8506/hackathon2
+[33m642292c[m rector: エコツーリズム体験予約
+[33m781deac[m Refacor: code fixed
+[33m9b9e921[m Refactor: CSS fixed
+[33mef02a35[m rector: link
+[33m5714626[m Merge branch 'main' of https://github.com/csw8506/hackathon2
+[33m7dab245[m RECTOR:  LINK
+[33mf14b70c[m pic change
+[33md7abce1[m Fix: pic add
+[33mdbf4c4f[m RECTOR:　　LINK
+[33m4402e27[m pic cnge
+[33m962ecdf[m pic change
+[33m7e80b26[m Merge branch 'main' of https://github.com/csw8506/hackathon2
+[33mc1360a8[m background img chnage
+[33m306362d[m Refactor: reserve fixed
+[33m4ddc72b[m[33m ([m[1;31morigin/chan[m[33m, [m[1;32mchan2[m[33m, [m[1;32mchan[m[33m)[m myanmarLanguageLocalization
+[33ma5ddc17[m refector: bokachoda
+[33mcf1855d[m refector: maf chai
+[33m8dd35cd[m refector: yea habibi
+[33m899380e[m refetor: disommmm
+[33m846bdcc[m Merge branch 'main' of https://github.com/csw8506/hackathon2
+[33mddb2484[m recfector: last
+[33m31342a3[m new change
+[33mb8c56f1[m n cnge
+[33m3c1647e[m r pic change
+[33m142086a[m refector:   essay
+[33mfdeecb9[m refector. image
+[33mf121161[m refactor:mingalaba
+[33m113a5c4[m Merge branch 'main' of https://github.com/csw8506/hackathon2
+[33m5571ab6[m boka choda
+[33m125c0e5[m Merge branch 'main' of https://github.com/csw8506/hackathon2
+[33m07f1db9[m refactor pic change
+[33m43088b7[m refeactor. titlt change done
+[33m7126214[m Merge branch 'main' of https://github.com/csw8506/hackathon2
+[33mb01e7ef[m refactor:　title change
+[33m54b6008[m Refactor: memo
+[33m03e859d[m Refactor: add reserve.py
+[33m7f49c0e[m Refactor: resrve fixes
+[33m6a5954e[m Refactor: Code fixes
+[33m32c1b7a[m Refackor: code fixes
+[33mdc7bff5[m Refactor: add pic and code fixes
+[33m99da846[m Refactor: 文章を変えました。
+[33ma06c7f2[m Refactor:  JS modification
+[33mc203407[m bin 2
+[33me8cc7de[m Refactor: add Guide.html
+[33mb5a5842[m Refactor: add Guide.html
+[33m0c4057a[m Merge branch 'main' of https://github.com/csw8506/hackathon2
+[33ma524cce[m bin
+[33mb7b8898[m Refactor: Code modification
+[33mbd2544c[m Refactor: Code modification
+[33m86a2ee9[m Refactor: Code modification
+[33m81a3f09[m Merge branch 'main' of https://github.com/csw8506/hackathon2
+[33me012e0b[m first commit
+[33m7634ffa[m Refator: Code modification
+[33mcec9cc4[m Refactor: Code fixes
+[33m7dece77[m Refactor: Change the CSS
+[33m00fca67[m Merge branch 'main' into siwon
+[33m48a1aac[m Refactor: Change the CSS
+[33m5587749[m Merge pull request #4 from csw8506/siwon
+[33mbae423a[m Refactor: Change the link address
+[33mec1e183[m Test: test bin
+[33mbc69b30[m[33m ([m[1;31morigin/bin[m[33m)[m Test: test bin
+[33m19bc658[m Merge pull request #2 from csw8506/siwon
+[33m8186cba[m Rename: add web folder
+[33m5a38056[m testbin
+[33mff15894[m Merge pull request #1 from csw8506/siwon
+[33m68a2de7[m Rename: eco.html
+[33me9609c9[m test: setup
+[33m8baace3[m Initial commit
